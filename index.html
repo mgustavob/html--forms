@@ -7,9 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="results.html" method="get">
+    <form action="results.html" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
 
-        
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="120" required>
+        </div>
+        <div>
+            <h2>Favorite Foods</h2>
+            <label for="bananas">Bananas</label>
+            <input type="checkbox" name="baanas" id="bananas">
+            <label for="apples">Apples</label>
+            <input type="checkbox" name="apples" id="apples">
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <button type="commit">Submit Info</button>
+        </div>
+
     </form>
 
 
